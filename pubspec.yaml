@@ -1,8 +1,8 @@
 name: super_editor_unofficial_helper
 description: A package that adds some helpers for super_editor
 version: 0.0.1
-authors:
-  - Sean van der Merwe
+
+repository: https://github.com/SeanfvdM/super_editor_unofficial_helper
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

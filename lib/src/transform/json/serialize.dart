@@ -60,7 +60,7 @@ Map<String, dynamic> documentToMap(
         '\$order': order,
       };
     } else {
-      return nodes as Map<String, dynamic>;
+      return Map<String, dynamic>.from(nodes);
     }
   } else {
     return {

@@ -1,6 +1,6 @@
 name: super_editor_unofficial_helper
-description: A package that adds some helpers for super_editor
-version: 0.0.1
+description: A package that adds some helpers for super_editor and some extensions.
+version: 0.0.2
 
 repository: https://github.com/SeanfvdM/super_editor_unofficial_helper
 

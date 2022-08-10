@@ -5,21 +5,21 @@ import 'package:super_editor/super_editor.dart';
 ///
 /// Some nodes, metadata and attributions might not be mapped.
 Map<String, dynamic> documentToMap(
-    ///The super_editor document that will be serialized
-    Document document, {
+  ///The super_editor document that will be serialized
+  Document document, {
 
-      ///Append a list of keys containing the order of nodes
-      ///
-      /// This is useful if you are using something like Firebase Firestore with sorts data on creation
-      bool appendOrder = false,
+  ///Append a list of keys containing the order of nodes
+  ///
+  /// This is useful if you are using something like Firebase Firestore with sorts data on creation
+  bool appendOrder = false,
 
-      ///Will retain the node id found in the document
-      ///
-      /// If `false` then nodes will be returned in a list
-      bool keepID = true,
-    }) {
+  ///Will retain the node id found in the document
+  ///
+  /// If `false` then nodes will be returned in a list
+  bool keepID = true,
+}) {
   assert(!(appendOrder && !keepID),
-  'AppendOrder is not available when keepID is false');
+      'AppendOrder is not available when keepID is false');
   var nodes = keepID ? {} : List.empty(growable: true);
   List<dynamic> order = List.empty(growable: true);
 
@@ -83,7 +83,7 @@ List<Map<String, String>> _getSpans(AttributedSpans spans, String text) {
   final end = text.length;
   return spans
       .getAttributionSpansInRange(
-      attributionFilter: (candidate) => true, start: start, end: end)
+          attributionFilter: (candidate) => true, start: start, end: end)
       .map((span) {
     var out = {
       'type': span.attribution.id,

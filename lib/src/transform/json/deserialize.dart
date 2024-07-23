@@ -50,8 +50,7 @@ MutableDocument mapToDocument(Map<String, dynamic> map) {
         content.add(
           ParagraphNode(
             id: id,
-            text: AttributedText(
-                text: value['text'], spans: _setSpans(value['spans'])),
+            text: AttributedText(value['text'], _setSpans(value['spans'])),
             metadata: _setMeta(value['metadata']),
           ),
         );
@@ -79,8 +78,7 @@ MutableDocument mapToDocument(Map<String, dynamic> map) {
             id: id,
             itemType: ListItemType.values.elementAt(value['itemType']),
             indent: value['indent'],
-            text: AttributedText(
-                text: value['text'], spans: _setSpans(value['spans'])),
+            text: AttributedText(value['text'], _setSpans(value['spans'])),
             metadata: _setMeta(value['metadata']),
           ),
         );

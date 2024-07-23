@@ -1,21 +1,22 @@
 name: super_editor_unofficial_helper
 description: A package that adds some helpers for super_editor and some extensions.
-version: 0.0.2
+version: 0.1.0
 
 repository: https://github.com/SeanfvdM/super_editor_unofficial_helper
+issues: https://github.com/sfx1909/super_editor_unofficial_helper/issues
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.4.4 < 4.0.0"
+  flutter: ">=3.22.3"
 
 dependencies:
   flutter:
     sdk: flutter
-  super_editor: ^0.2.2
-  super_editor_markdown: ^0.1.3
+  super_editor: ^0.2.7
+  super_editor_markdown: ^0.1.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 flutter:

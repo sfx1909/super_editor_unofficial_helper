@@ -27,7 +27,7 @@ Map<String, dynamic> documentToMap(
     final node = document.nodes.elementAt(i);
     final id = '\$\$${node.id.replaceAll('-', '_')}';
     order.add(id);
-    var data;
+    Map<String, dynamic>? data;
     if (node is ImageNode) {
       data = {
         'altText': node.altText,
@@ -45,7 +45,7 @@ Map<String, dynamic> documentToMap(
     } else if (node is ParagraphNode) {
       data = _getTextMeta(node);
     }
-
+    
     if (nodes is Map) {
       nodes[id] = data;
     } else if (nodes is List) {

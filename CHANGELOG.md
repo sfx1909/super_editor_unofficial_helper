@@ -1,3 +1,7 @@
+## 0.1.1
+
+- Removed dependency on markdown as it is outdated
+
 ## 0.1.0
 
 * Upgrades to SDK and package versions
